@@ -13,7 +13,7 @@ def directors_totals(nds)
       gross += directors_database[director_count][:movies][movie_count][:worldwide_gross]
       movie_count += 1 
     end 
-    director_gross.push(directors_database[director_count] => gross)
+    director_gross.push(directors_database[director_count]:  gross)
     
 
     director_count += 1 
