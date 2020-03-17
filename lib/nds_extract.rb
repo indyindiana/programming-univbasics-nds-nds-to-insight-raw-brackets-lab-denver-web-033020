@@ -10,7 +10,7 @@ def directors_totals(nds)
     movie_count = 0 
     while movie_count < directors_database[director_count][:movies].length do
       
-      director_gross[output_count] =  {directors_database[director_count] => directors_database[director_count][:movies][movie_count][:worldwide_gross]}
+      director_gross[output_count] = {directors_database[director_count] => directors_database[director_count][:movies][movie_count][:worldwide_gross]}
       
       
         directors_database[director_count][:movies][movie_count][:worldwide_gross]
