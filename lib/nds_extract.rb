@@ -8,19 +8,14 @@ def directors_totals(nds)
   director_count = 0 
   while director_count < directors_database.length do
     movie_count = 0 
+    gross = 0 
     while movie_count < directors_database[director_count][:movies].length do
-      
-      
-      
-      
-      
-      
-      
-      director_gross[output_count] = {directors_database[director_count] => directors_database[director_count][:movies][movie_count][:worldwide_gross]}
-      
-      
-        directors_database[director_count][:movies][movie_count][:worldwide_gross]
-    end
+      gross += directors_database[director_count][:movies][movie_count][:worldwide_gross]
+      movie_count += 1 
+    end 
+    return gross
+
+    director_count += 1 
   end
   
   # Remember, it's always OK to pretty print what you get *in* to make sure
